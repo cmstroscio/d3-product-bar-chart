@@ -11,7 +11,7 @@ function Chart(width, height, id) {
 	this.y = d3.scale.linear().range([this.height, 0]);
 	
 	this.xAxis = d3.svg.axis().scale(this.x).orient('bottom');
-	this.yAxis = d3.svg.axis().scale(this.y).orient('left').ticks(10);
+	this.yAxis = d3.svg.axis().scale(this.y).orient('left').ticks(5);
 	
 	this.container = d3.select(id);
 	this.svg = [];
@@ -85,7 +85,7 @@ Chart.render = function(json, chart, c) {
       	.attr("y", 6)
       	.attr("dy", ".71em")
       	.style("text-anchor", "end")
-      	.text("Frequency (k)");
+      	.text("Maximum Raw Capacity");
 
 	//group bars
 	var barsContainer = g.append("g").attr('id', 'bars');

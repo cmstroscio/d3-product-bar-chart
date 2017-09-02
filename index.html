@@ -22,15 +22,22 @@
 	<script>
 		var chart = new Chart(500, 300, "#statChart");
 		
-		var chartData = [ {name: 'Foo', value: [{"a":100}, {"b":150}, {"c":200}]}, 
-				  {name: 'Bar', value: [{"a":200}, {"b":250}, {"c":300}]}, 
+		var chartData = [ {name: '', value: [{"a":100}, {"b":150}, {"c":200}]}, 
+				  {name: 'fas', value: [{"a":200}, {"b":250}, {"c":300}]}, 
 				  {name: 'Baz', value: [{"a":300}, {"b":350}, {"c":400}]} ];	
 		
 		Chart.render(chartData, chart);
 		
-		chartData = [ {name: 'Foo', value: [{"a":100}, {"b":150}, {"c":200}, {"d":250}]}, 
-			      {name: 'Bar', value: [{"a":200}, {"b":250}, {"c":300}, {"d":350}]}, 
-			      {name: 'Baz', value: [{"a":300}, {"b":350}, {"c":400}, {"d":450}]} ];	
+		chartData = [ 
+				  {name: 'AFF A700s', value: [{"a":39}, {"b":19.8}, {"c":3.3}]
+						}, 
+			      {name: 'AFF A700', value: [{"a":88.1}, {"b":44.1}, {"c":7.3}]
+			  			}, 
+			      {name: 'AFF A300', value: [{"a":70.5}, {"b":35.3}, {"c":5.9}]
+			  			},
+			  	  {name: 'AFF A200', value: [{"a":34.7}, {"b":8.8}, {"c":2.2}]
+			  			}
+			   ];	
 		
 		Chart.render(chartData, chart);
     	</script>
