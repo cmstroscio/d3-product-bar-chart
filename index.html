@@ -13,14 +13,18 @@
     
     <body>
 	<section>
-		<div id='statChart'></div>
+		<div id='aff-max-cap'></div>
+	</section>
+
+	<section>
+		<div id='fas-max-cap'></div>
 	</section>
 		
 	<!-- D3 js -->
     	<script src="http://d3js.org/d3.v3.min.js"></script>
     	<script src="chart.js"></script>
 	<script>
-		var chart = new Chart(500, 300, "#statChart");
+		var chart = new Chart(500, 300, "#aff-max-cap");
 		
 		var chartData = [ {name: '', value: [{"a":100}, {"b":150}, {"c":200}]}, 
 				  {name: 'fas', value: [{"a":200}, {"b":250}, {"c":300}]}, 
@@ -40,7 +44,34 @@
 			   ];	
 		
 		Chart.render(chartData, chart);
+
+		//FAS Chart
+		var chart = new Chart(500, 300, "#fas-max-cap");
+		
+		var chartData = [ {name: 'FAS 9000', value: [{"a":172}, {"b":86}, {"c":14.4}]}, 
+				  {name: 'FAS 8200', value: [{"a":57}, {"b":28}, {"c":4.8}]}, 
+				  {name: 'FAS 8000', value: [{"a":300}, {"b":350}, {"c":400}]} ];	
+		
+		Chart.render(chartData, chart);
+		
+		faschartData = [ 
+				  {name: 'AFF A700s', value: [{"a":39}, {"b":19.8}, {"c":3.3}]
+						}, 
+			      {name: 'AFF A700', value: [{"a":88.1}, {"b":44.1}, {"c":7.3}]
+			  			}, 
+			      {name: 'AFF A300', value: [{"a":70.5}, {"b":35.3}, {"c":5.9}]
+			  			},
+			  	  {name: 'AFF A200', value: [{"a":34.7}, {"b":8.8}, {"c":2.2}]
+			  			}
+			   ];	
+		
+		fasChart.render(chartData, chart);
+
+
     	</script>
+
+
+
     </body>
 </html>
 
