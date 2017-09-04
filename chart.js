@@ -119,6 +119,8 @@ Chart.render = function(json, chart, c) {
 			.attr('y', function(d) { return chart.y(d3.values(d.value[j])); })
 			.attr('height', function(d) { return chart.height - chart.y(d3.values(d.value[j])); });
 	}
+
+
 }
 
 //fas Chart
@@ -209,10 +211,13 @@ fasChart.render = function(json, chart, c) {
       	.attr("y", 6)
       	.attr("dy", ".71em")
       	.style("text-anchor", "end")
+
       	.text("Maximum Raw Capacity");
 
 	//group bars
 	var barsContainer = g.append("g").attr('id', 'bars');
+
+
 
 	//Data join - Append g elements to the bars element
 	var bars = barsContainer.selectAll('g')
@@ -243,6 +248,7 @@ fasChart.render = function(json, chart, c) {
 			.attr('y', function(d) { return chart.y(d3.values(d.value[j])); })
 			.attr('height', function(d) { return chart.height - chart.y(d3.values(d.value[j])); });
 	}
+
 }
 
 
