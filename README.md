@@ -1,4 +1,4 @@
-This project uses various D3 bar charts to display product specs. Run 'gulp' to start.
+This project uses various D3 bar charts to display product specs. Run 'gulp browsersync' to start.
 
 # D3 Dynamic Grouped Bar Chart
 
