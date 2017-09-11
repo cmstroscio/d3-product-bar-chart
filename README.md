@@ -1,3 +1,5 @@
+This project uses various D3 bar charts to display product specs. Run 'gulp' to start.
+
 # D3 Dynamic Grouped Bar Chart
 
 [D3.js](http://d3js.org/) grouped bar chart implementation that provides a wrapper for rendering rectangles and scales dynamically based on the data passed to it. This can be plugged in with ease on any existing application. The chart can be modified dynamically by simply adding/removing values to the data. This is a very straightforward implementation.
