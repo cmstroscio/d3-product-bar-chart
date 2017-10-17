@@ -1,7 +1,7 @@
-State,NAS scale-out: 1–24 nodes (12 HA pairs),SAN scale-out: 1–12 nodes (6 HA pairs),Per HA Pair Specifications (Active-Active Dual Controller)
-FAS9000,172,86,14.4
-FAS8080,172,86,14.4
-FAS8060,144,72,12
-FAS8040,86,43.72
-FAS8020,57,28,4.8
+State,Maximum Memory NAS scale-out: 1–24 nodes (12 HA pairs) (PB),Maximum Flash Cache Per HA Pair Specifications (Active-Active Dual Controller),Maximum Flash Cache SAN scale-out: 1–12 nodes (6 HA pairs),Maximum Flash Cache NAS scale-out	: 1–24 nodes (12 HA pairs) (TB),NAS scale-out: 1–24 nodes (12 HA pairs),SAN scale-out: 1–12 nodes (6 HA pairs),Per HA Pair Specifications (Active-Active Dual Controller)
+FAS9000,12.288,16,96,192,172,86,14.4
+FAS8080,3.072,24,288,576,172,86,14.4
+FAS8060,1.536,8,96,192,144,72,12
+FAS8040,.768,4,24,48,86,43,7.2
+FAS8020,.576,3,18,36,57,28,4.8
 
